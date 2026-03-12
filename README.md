@@ -1,54 +1,36 @@
-<div align="center">
-  
-  ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/gamics)
-  ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/gamics?style=social)
-  ![GitHub forks](https://img.shields.io/github/forks/codewithsadee/gamics?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/VJKx9uLEpaU?style=social)](https://youtu.be/VJKx9uLEpaU)
-
-  <br />
-  <br />
-
-  <h2 align="center">Gamics - Gaming website</h2>
-
-  Gamics is a fully responsive gaming website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
-
-  <a href="https://codewithsadee.github.io/gamics/"><strong>➥ Live Demo</strong></a>
-
-</div>
-
-<br />
-
-### Demo Screeshots
-
 ![Gamics Desktop Demo](./readme-images/desktop.png "Desktop Demo")
 
 ### Prerequisites
 
 Before you begin, ensure you have met the following requirements:
+# GIGAQUIZ 🎮
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+GIGAQUIZ is an interactive web-based quiz gaming platform where users can log in, attempt quizzes, and track their performance through a leaderboard. The application provides a fun and engaging way for users to test their knowledge with dynamic quiz questions and real-time score tracking.
 
-### Run Locally
+## 🚀 Live Demo
 
-To run **Gamics** locally, run this command on your git bash:
+https://incredible-marigold-891f59.netlify.app/
 
-Linux and macOS:
+## ✨ Features
 
-```bash
-sudo git clone https://github.com/codewithsadee/gamics.git
-```
+* User login system
+* Interactive quiz interface
+* Dynamic question rendering using JavaScript
+* Automatic score calculation
+* Leaderboard to track user rankings
+* Responsive UI for better user experience
 
-Windows:
+## 🛠️ Tech Stack
 
-```bash
-git clone https://github.com/codewithsadee/gamics.git
-```
+* HTML5
+* CSS3
+* JavaScript
 
-### Contact
+## 📂 Pages Included
 
-If you want to contact with me you can reach me at [Twitter](https://www.twitter.com/codewithsadee).
+* Home Page
+* Login Page
+* Quiz Page
+* Leaderboard
+* Contact / About Page
 
-### License
-
-This project is **free to use** and does not contains any license.
