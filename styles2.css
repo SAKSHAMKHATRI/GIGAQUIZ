@@ -1,0 +1,289 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+body::before{
+    content: "";
+    position: absolute;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/011/110/983/large_2x/bokeh-light-soft-blur-background-beauty-nature-free-photo.jpg");
+    height: 1200px;
+    z-index: -1;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    width: 2500px;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin:0px -30px;
+} 
+nav ul li {
+    display: inline;
+   margin: 0px 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none; 
+}
+nav ul li a:hover{
+    color:white;
+    
+}
+h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:all;
+    transition-duration: 2s;
+  
+}
+#button1 {
+    background: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:all;
+    transition-duration: 2s;
+   
+}
+.button2 {
+    background: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:all;
+    transition-duration: 2s;
+   
+}
+.button:hover {
+    background: #45a049;
+    transform: scale(1.25);
+    /* height: 25px;
+    width: 100px; */
+}
+#button1:hover {
+    background: #45a049;
+    transform: scale(1.25);
+    /* height: 35px;
+    width: 100px; */
+}
+.button2:hover {
+    background: #45a049;
+    transform: scale(1.25);
+    /* height: 35px;
+    width: 100px; */
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 270px;
+    margin-top: 100px;
+}
+.item{
+    margin-bottom: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+.tweet{
+    margin-right:-880px ;
+    margin-top: -60px;
+}
+
+.jj{
+    margin-top: 180px;
+}
+.ll{
+    margin-left: 1095px;
+    margin-top: -25px;
+}
+.about{
+    font-weight: bold;
+    font-size: 23px;
+}
+.container6{
+    height: 300px;
+    background-color:rgba(192, 39, 171, 0.24);
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: 35vh 35vh;
+    grid-gap: 10px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 40px;
+
+}
+.container6 div:nth-child(1){
+    height: 300px;
+   background-color:rgba(229, 218, 228, 0.24);
+   box-shadow:  rgba(223, 32, 197, 0.24) 0px 3px 8px;
+   text-align: center;
+   
+}
+.container6 div:nth-child(2){
+    height: 300px;
+    background-color: rgba(229, 218, 228, 0.24);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+}
+.container6 div:nth-child(3){
+    height: 300px;
+    background-color: rgba(229, 218, 228, 0.24);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+}
+.child6{
+    transition: background 0.3s ease, transform 0.3s ease;
+    border-radius: 20px;
+}
+.child6:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+}
+.image2{
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack links vertically on small screens */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Space between links */
+    }
+
+    main {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        height: auto; /* Adjust height for smaller screens */
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2rem;
+    }
+
+    main {
+        font-size: 1rem;
+    }
+
+    .about {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aa {
+        flex-direction: column;
+    }
+
+    .aa img {
+        width: 80%; /* Make images smaller on smaller screens */
+    }
+
+    .button {
+        width: 100%; /* Full width button on small screens */
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto; /* Center the container */
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aa {
+        flex-direction: column;
+    }
+
+    .aa img {
+        width: 80%; /* Make images smaller on smaller screens */
+    }
+
+    .button {
+        width: 100%; /* Full width button on small screens */
+    }
+}
+
+
+@media (min-width: 400px) and (max-width: 768px) {
+    /* Minimum width adjustments */
+    body {
+        min-width: 400px; /* Ensuring a minimum width */
+    }
+}

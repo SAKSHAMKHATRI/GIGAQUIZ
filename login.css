@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/wp5193760.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+    position: relative; /* For positioning the animated shapes */
+    animation: fadeIn 2s ease-in-out; /* Fade-in effect for page load */
+}
+
+/* Animation for background shapes (circles and squares) */
+@keyframes moveShapes {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+/* Animation for page load (fade-in effect) */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Circle background animation */
+.circle, .square {
+    position: absolute;
+    background-color: rgba(0, 255, 0, 0.5); /* Green for circles and squares */
+    border-radius: 50%;
+    opacity: 0.5;
+    z-index: -1; /* Behind the form */
+    animation: moveShapes 10s linear infinite;
+}
+
+/* Specific styles for circles */
+.circle {
+    width: 80px;
+    height: 80px;
+    top: 20%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+/* Specific styles for squares */
+.square {
+    width: 60px;
+    height: 60px;
+    top: 40%;
+    right: 5%;
+    animation-delay: 5s;
+}
+
+/* Main form container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form container */
+.form-container {
+    background-color: rgba(18, 18, 18, 0.8); /* Dark background with slight transparency */
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 20px 40px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+    width: 300px;
+    transform: translateY(100px);
+    animation: formSlideIn 1s ease-out forwards; /* Animation for form slide-in */
+}
+
+/* Animation for form slide-in */
+@keyframes formSlideIn {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Form styles */
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: rgb(121, 167, 212); /* Neon green text for a gaming feel */
+    font-size: 1.5rem; /* Increased font size */
+    animation: fadeInUp 1s ease-out; /* Animation for heading fade-up */
+}
+
+/* Animation for heading fade-up */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Input fields */
+input {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(121, 167, 212); /* Dark green background for inputs */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: inputFadeIn 0.5s ease-out forwards; /* Input fade-in effect */
+}
+
+@keyframes inputFadeIn {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Focus effect for inputs */
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+    transform: translateY(-2px);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Button styles */
+button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(34, 48, 61);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: buttonFadeIn 0.7s ease-out forwards; /* Button fade-in animation */
+}
+
+@keyframes buttonFadeIn {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+button:hover {
+    background-color: #54909af0;
+    transform: translateY(-2px) scale(1.05);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+    animation: pulse 0.5s infinite;
+}
+
+/* Pulse effect for button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+p {
+    text-align: center;
+    color: white;
+}
+
+/* Link styles */
+a {
+    color: #b6cae0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2d3e50;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #1a1a1a;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 400px;
+}
+
+.modal-content h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.modal-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+.modal-content button {
+    padding: 0.8rem 1.5rem;
+    background-color: #003d20;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color:  rgb(121, 167, 212);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
